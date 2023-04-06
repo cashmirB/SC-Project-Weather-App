@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control shadow-sm"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm"
+                />
+              </div>
+            </div>
+          </form>
+          <h1 id="city">Sydney NSW, Australia</h1>
+          <ul>
+            <li id="date">Wednesday 22:00</li>
+            <li id="description">Partly Cloudy</li>
+          </ul>
+          <div class="row">
+            <div class="col-8">
+              <div class="d-flex weather-temp">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy icon"
+                  id="icon"
+                />
+
+                <span class="temperature" id="currentTemp">19</span>
+                <span class="units">
+                  <a href="#" id="celcius" class="active">°C</a> |
+                  <a href="#" id="fahrenheit">°F</a>
+                </span>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul>
+                <li>Humidity: <span id="humidity">77</span>%</li>
+                <li>Wind: <span id="wind"> 8</span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <small>
+          <a href="https://github.com/cashmirB/SC-Homework-7" target="_blank"
+            >Open-source code</a
+          >
+          by Cashmir Balajadia
+        </small>
+      </div>
+    </div>
+
+    <script src="src/scripts.js"></script>
+  </body>
+</html>
