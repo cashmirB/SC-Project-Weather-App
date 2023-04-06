@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>SC Homework 7</title>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
@@ -34,7 +34,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form-control btn btn-primary shadow-sm"
+                  class="form-control btn btn-success shadow-sm"
                 />
               </div>
             </div>
@@ -45,7 +45,7 @@
             <li id="description">Partly Cloudy</li>
           </ul>
           <div class="row">
-            <div class="col-8">
+            <div class="col-9">
               <div class="d-flex weather-temp">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
@@ -54,16 +54,13 @@
                 />
 
                 <span class="temperature" id="currentTemp">19</span>
-                <span class="units">
-                  <a href="#" id="celcius" class="active">°C</a> |
-                  <a href="#" id="fahrenheit">°F</a>
-                </span>
+                <span class="units"> °C </span>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <ul>
                 <li>Humidity: <span id="humidity">77</span>%</li>
-                <li>Wind: <span id="wind"> 8</span> km/h</li>
+                <li>Wind: <span id="wind"> 8</span> m/h</li>
               </ul>
             </div>
           </div>
